@@ -1,12 +1,4 @@
-# =============================================================================
-# LILLE COMPILER - Final Submission
-# =============================================================================
-# 
-# Written by: Jimi Adegoroye
-# Course: CSC4510 Programming Language Design and Translation
-# Date: December 2025
-#
-# =============================================================================
+
 
 ## PROJECT OVERVIEW
 
