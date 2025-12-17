@@ -1,0 +1,13 @@
+program p is
+  a : integer := 123;
+  r : real    := 123.45;
+begin
+  -- following must scan as INTEGER 5, RANGE .., INTEGER 7 (not a real and a dot)
+  a := 5 .. 7;
+  a := .7;
+  a := 7.;
+  a := .7;
+  a := .1231231dsdsd;
+
+  null;
+end p;

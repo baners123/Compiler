@@ -1,0 +1,8 @@
+program p is
+  x, y : integer := 21, 21;
+  s    : string  := "He said ""hi""";
+begin
+  write(x + y);  writeln;
+  if 5 in 1 .. 10 then null; end if;
+end p;
+;

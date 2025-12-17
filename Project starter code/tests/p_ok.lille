@@ -1,0 +1,14 @@
+program P is
+  x, y : integer := 1, 2;
+  s    : string;
+begin
+  x := x + y;
+  if x > 0 then
+    null;
+  elsif x = 0 then
+    null;
+  else
+    null;
+  end if;
+end P;
+;

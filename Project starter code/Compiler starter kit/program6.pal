@@ -1,0 +1,59 @@
+JMP  0     14           (1) Jump over the predefined functions.
+LDV  0     0            (2) Load argument.
+OPR  0     25           (3) Convert an integer to a real.
+OPR  0     1            (4) Function value return.
+LDV  0     0            (5) Load argument.
+OPR  0     26           (6) Convert a real to an integer.
+OPR  0     1            (7) Function value return.
+LDV  0     0            (8) Load argument.
+OPR  0     27           (9) Convert an integer to a string.
+OPR  0     1            (10) Function value return.
+LDV  0     0            (11) Load argument.
+OPR  0     28           (12) Convert a real to a string.
+OPR  0     1            (13) Function value return.
+JMP  0     16           (14) Jump to start of statements or block.
+INC  0     0            (15) Reserve space for declared variables and constants.
+LCS  0     'In ascending order: '(16) Load string value.
+OPR  0     20           (17) Write value.
+OPR  0     21           (18) Terminate output to the current line.
+LCI  0     1            (19) Load integer constant.
+LCI  0     5            (20) Load integer constant.
+STO  0     0            (21) Store to: I
+LDV  0     0            (22) Load variable: I
+OPR  0     15           (23) Test less than or equal.
+JIF  0     36           (24) Exit loop if test fails.
+MST  1     0            (25) Mark stack.
+LDV  0     0            (26) Load variable: I
+CAL  1     8            (27) Function call: int2string
+LCS  0     ' '          (28) Load string value.
+OPR  0     8            (29) String concatenation.
+OPR  0     20           (30) Write value.
+LDV  0     0            (31) Load variable: I
+LCI  0     1            (32) Load 1 for increment/decrement.
+OPR  0     3            (33) Add (increment).
+STO  0     0            (34) Store to: I
+JMP  0     22           (35) Jump.
+OPR  0     21           (36) Terminate output to the current line.
+LCS  0     'In descending order: '(37) Load string value.
+OPR  0     20           (38) Write value.
+OPR  0     21           (39) Terminate output to the current line.
+LCI  0     1            (40) Load integer constant.
+LCI  0     5            (41) Load integer constant.
+OPR  0     22           (42) Swap (get high value on top).
+STO  0     0            (43) Store to: I
+LDV  0     0            (44) Load variable: I
+OPR  0     13           (45) Test greater than or equal.
+JIF  0     58           (46) Exit loop if test fails.
+MST  1     0            (47) Mark stack.
+LDV  0     0            (48) Load variable: I
+CAL  1     8            (49) Function call: int2string
+LCS  0     ' '          (50) Load string value.
+OPR  0     8            (51) String concatenation.
+OPR  0     20           (52) Write value.
+LDV  0     0            (53) Load variable: I
+LCI  0     1            (54) Load 1 for increment/decrement.
+OPR  0     4            (55) Subtract (decrement).
+STO  0     0            (56) Store to: I
+JMP  0     44           (57) Jump.
+OPR  0     21           (58) Terminate output to the current line.
+JMP  0     0            (59) Halt program.

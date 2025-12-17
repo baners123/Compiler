@@ -1,0 +1,3 @@
+program p is
+  s : string := "a ""quoted"" word";
+begin null; end p; ;

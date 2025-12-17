@@ -1,0 +1,6 @@
+PROGRAM P IS
+  X : INTEGER;
+  X : INTEGER;   -- redeclare same scope
+BEGIN
+  NULL;
+END P;

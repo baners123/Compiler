@@ -1,0 +1,6 @@
+program P is
+  w : numero := 5;   -- "numero" is not a Lille type
+begin
+  null;
+end P;
+;

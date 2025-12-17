@@ -1,0 +1,6 @@
+program P is
+  x : integer := 1    -- missing semicolon here
+begin
+  x := 2;
+end P;
+;

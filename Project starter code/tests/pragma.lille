@@ -1,0 +1,8 @@
+pragma DEBUG(ON);
+pragma ERROR_LIMIT(3);
+program p is
+  x : integer := 1;
+begin
+  null;
+end p;
+;

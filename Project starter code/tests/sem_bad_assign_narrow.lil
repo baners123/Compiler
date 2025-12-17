@@ -1,0 +1,5 @@
+program P is
+  A: integer           -- missing ';' here
+begin
+  null;
+end P;

@@ -1,0 +1,33 @@
+/*
+ * lille_exception.cpp
+ *
+ * Written:            1 June 2020
+ * Last modified:      1 June 2023
+ *      Author: Michael Oudshoorn
+ */
+
+#include <exception>
+#include <iostream>
+#include <string>
+
+#include "lille_exception.h"
+
+using namespace std;
+
+lille_exception::lille_exception() : exception ()
+{
+	problem = "Unspecified lille exception detected.";
+}
+
+
+lille_exception::lille_exception(string s) : exception (){
+	problem = s;
+}
+
+
+const char* lille_exception::what() const throw()
+{
+	return &lille_exception::problem[0];
+}
+
+

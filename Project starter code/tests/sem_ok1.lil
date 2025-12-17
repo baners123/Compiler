@@ -1,0 +1,6 @@
+PROGRAM P IS
+  X : INTEGER;  Y : REAL;
+BEGIN
+  X := 3;
+  Y := X + 4;   -- int→real widen ok
+END P;

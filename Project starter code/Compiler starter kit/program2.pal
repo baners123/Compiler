@@ -1,0 +1,38 @@
+JMP  0     14           (1) Jump over the predefined functions.
+LDV  0     0            (2) Load argument.
+OPR  0     25           (3) Convert an integer to a real.
+OPR  0     1            (4) Function value return.
+LDV  0     0            (5) Load argument.
+OPR  0     26           (6) Convert a real to an integer.
+OPR  0     1            (7) Function value return.
+LDV  0     0            (8) Load argument.
+OPR  0     27           (9) Convert an integer to a string.
+OPR  0     1            (10) Function value return.
+LDV  0     0            (11) Load argument.
+OPR  0     28           (12) Convert a real to a string.
+OPR  0     1            (13) Function value return.
+INC  0     1            (14) Reserve space for local variables
+LDV  0     0            (15) Load variable: N
+LDV  0     0            (16) Load variable: N
+OPR  0     3            (17) Add arithmetic expressions together.
+STO  0     0            (18) Store result.
+MST  1     0            (19) Mark stack.
+LDV  0     0            (20) Load variable or constant.
+CAL  1     8            (21) Function call: int2string
+OPR  0     20           (22) Write value.
+OPR  0     0            (23) Procedure return.
+INC  0     1            (24) Reserve space for local variables
+JMP  0     27           (25) Jump to start of statements or block.
+INC  0     1            (26) Reserve space for declared variables and constants.
+LCS  0     'Enter a number: '(27) Load string value.
+OPR  0     20           (28) Write value.
+RDI  0     0            (29) Read integer value.
+LCS  0     'The number doubled is: '(30) Load string value.
+OPR  0     20           (31) Write value.
+MST  1     0            (32) Mark stack.
+LDV  0     0            (33) Load variable or constant.
+CAL  1     0            (34) Call procedure: DOUBLE
+LCS  0     '.'          (35) Load string value.
+OPR  0     20           (36) Write value.
+OPR  0     21           (37) Terminate output to the current line.
+JMP  0     0            (38) Halt program.

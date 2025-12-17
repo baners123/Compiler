@@ -1,0 +1,64 @@
+JMP  0     14           (1) Jump over the predefined functions.
+LDV  0     0            (2) Load argument.
+OPR  0     25           (3) Convert an integer to a real.
+OPR  0     1            (4) Function value return.
+LDV  0     0            (5) Load argument.
+OPR  0     26           (6) Convert a real to an integer.
+OPR  0     1            (7) Function value return.
+LDV  0     0            (8) Load argument.
+OPR  0     27           (9) Convert an integer to a string.
+OPR  0     1            (10) Function value return.
+LDV  0     0            (11) Load argument.
+OPR  0     28           (12) Convert a real to a string.
+OPR  0     1            (13) Function value return.
+INC  0     0            (14) Reserve space for local variables
+LDV  0     0            (15) Load variable: N1
+LDV  0     0            (16) Load variable: N1
+OPR  0     3            (17) Add arithmetic expressions together.
+STO  0     0            (18) Store to: N2
+OPR  0     0            (19) Procedure return.
+INC  0     1            (20) Reserve space for local variables
+MST  1     0            (21) Mark stack.
+LDV  0     0            (22) Load variable: N1
+LDV  0     0            (23) Load variable or constant.
+CAL  1     0            (24) Call procedure: DOUBLE
+MST  1     0            (25) Mark stack.
+LDV  0     0            (26) Load variable or constant.
+LDV  0     0            (27) Load variable or constant.
+CAL  1     0            (28) Call procedure: DOUBLE
+LDV  0     0            (29) Load variable or constant.
+STO  0     0            (30) Store to: N2
+OPR  0     0            (31) Procedure return.
+INC  0     3            (32) Reserve space for local variables
+JMP  0     35           (33) Jump to start of statements or block.
+INC  0     3            (34) Reserve space for declared variables and constants.
+LCS  0     'Enter a number: '(35) Load string value.
+OPR  0     20           (36) Write value.
+RDI  0     0            (37) Read integer value.
+MST  1     0            (38) Mark stack.
+LDV  0     0            (39) Load variable or constant.
+LDV  0     1            (40) Load variable or constant.
+CAL  1     0            (41) Call procedure: DOUBLE
+MST  1     0            (42) Mark stack.
+LDV  0     0            (43) Load variable or constant.
+LDV  0     2            (44) Load variable or constant.
+CAL  1     0            (45) Call procedure: QUADRUPLE
+OPR  0     21           (46) Terminate output to the current line.
+MST  1     0            (47) Mark stack.
+LDV  0     0            (48) Load variable or constant.
+CAL  1     8            (49) Function call: int2string
+OPR  0     20           (50) Write value.
+LCS  0     '  '         (51) Load string value.
+OPR  0     20           (52) Write value.
+MST  1     0            (53) Mark stack.
+LDV  0     1            (54) Load variable or constant.
+CAL  1     8            (55) Function call: int2string
+OPR  0     20           (56) Write value.
+LCS  0     '  '         (57) Load string value.
+OPR  0     20           (58) Write value.
+MST  1     0            (59) Mark stack.
+LDV  0     2            (60) Load variable or constant.
+CAL  1     8            (61) Function call: int2string
+OPR  0     20           (62) Write value.
+OPR  0     21           (63) Terminate output to the current line.
+JMP  0     0            (64) Halt program.

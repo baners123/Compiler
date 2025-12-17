@@ -1,0 +1,73 @@
+JMP  0     14           (1) Jump over the predefined functions.
+LDV  0     0            (2) Load argument.
+OPR  0     25           (3) Convert an integer to a real.
+OPR  0     1            (4) Function value return.
+LDV  0     0            (5) Load argument.
+OPR  0     26           (6) Convert a real to an integer.
+OPR  0     1            (7) Function value return.
+LDV  0     0            (8) Load argument.
+OPR  0     27           (9) Convert an integer to a string.
+OPR  0     1            (10) Function value return.
+LDV  0     0            (11) Load argument.
+OPR  0     28           (12) Convert a real to a string.
+OPR  0     1            (13) Function value return.
+INC  0     0            (14) Reserve space for local variables
+LDV  1     1            (15) Load variable or constant.
+LCI  0     1            (16) Load integer constant.
+OPR  0     3            (17) Add arithmetic expressions together.
+STO  1     1            (18) Store result.
+LDV  1     2            (19) Load variable or constant.
+LDV  0     0            (20) Load variable: N
+OPR  0     3            (21) Add arithmetic expressions together.
+STO  1     2            (22) Store result.
+OPR  0     0            (23) Procedure return.
+INC  0     4            (24) Reserve space for local variables
+JMP  0     27           (25) Jump to start of statements or block.
+INC  0     4            (26) Reserve space for declared variables and constants.
+LCI  0     0            (27) Load integer constant.
+STO  0     1            (28) Store result.
+LCI  0     0            (29) Load integer constant.
+STO  0     2            (30) Store result.
+LCS  0     'Enter a number, 0 to exit: '(31) Load string value.
+OPR  0     20           (32) Write value.
+RDI  0     0            (33) Read integer value.
+LDV  0     0            (34) Load variable or constant.
+LCI  0     0            (35) Load integer constant.
+OPR  0     10           (36) Test for equality.
+OPR  0     16           (37) Logical complement (not).
+JIF  0     43           (38) Jump if true (via not + jif).
+MST  1     0            (39) Mark stack.
+LDV  0     0            (40) Load variable or constant.
+CAL  1     0            (41) Call procedure: NEWNUMBER
+JMP  0     31           (42) Jump.
+LCS  0     'Count is '  (43) Load string value.
+MST  1     0            (44) Mark stack.
+LDV  0     1            (45) Load variable or constant.
+CAL  1     8            (46) Function call: int2string
+OPR  0     8            (47) String concatenation.
+OPR  0     20           (48) Write value.
+OPR  0     21           (49) Terminate output to the current line.
+LCS  0     'Total is '  (50) Load string value.
+MST  1     0            (51) Mark stack.
+LDV  0     2            (52) Load variable or constant.
+CAL  1     8            (53) Function call: int2string
+OPR  0     8            (54) String concatenation.
+OPR  0     20           (55) Write value.
+OPR  0     21           (56) Terminate output to the current line.
+LDV  0     1            (57) Load variable or constant.
+LCI  0     0            (58) Load integer constant.
+OPR  0     11           (59) Test for inequality.
+JIF  0     73           (60) Jump if false.
+LDV  0     2            (61) Load variable or constant.
+LDV  0     1            (62) Load variable or constant.
+OPR  0     6            (63) Divide arithmetic expressions.
+STO  0     3            (64) Store result.
+LCS  0     'Average is '(65) Load string value.
+MST  1     0            (66) Mark stack.
+LDV  0     3            (67) Load variable or constant.
+CAL  1     8            (68) Function call: int2string
+OPR  0     8            (69) String concatenation.
+OPR  0     20           (70) Write value.
+OPR  0     21           (71) Terminate output to the current line.
+JMP  0     73           (72) Jump.
+JMP  0     0            (73) Halt program.
